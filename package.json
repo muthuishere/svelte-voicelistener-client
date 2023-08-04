@@ -4,6 +4,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"deploy": "pnpm build && pnpx gh-pages -d build -t true",
+
 		"preview": "vite preview",
 		"test": "npm run test:integration && npm run test:unit",
 		"test:integration": "playwright test",
